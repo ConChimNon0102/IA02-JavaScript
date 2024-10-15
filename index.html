@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bé Tập Tính</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 p-4">
+    <div class="custom-max-width mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold mb-6">Bé Tập Tính</h1>
+        
+        <form>
+            <div class="mb-4 flex items-center justify-between">
+                <label class="flex-1">Số thứ nhất</label>
+                <input type="text" class="first_num flex-2 border border-gray-300 rounded p-1 mx-2">
+                <div class="flex-2 flex items-center">
+                    <label class="flex items-center mr-2">
+                        <input type="radio" name="operation" value="add" class="form-radio h-5 w-5">
+                        <span class="ml-1">Cộng</span>
+                    </label>
+                    <label class="flex items-center mr-2">
+                        <input type="radio" name="operation" value="subtract" class="form-radio h-5 w-5">
+                        <span class="ml-1">Trừ</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="mb-4 flex items-center justify-between">
+                <label class="flex-1">Số thứ hai</label>
+                <input type="text" class="second_num flex-2 border border-gray-300 rounded p-1 mx-2">
+                <div class="flex-2 flex items-center">
+                    <label class="flex items-center mr-2">
+                        <input type="radio" name="operation" value="multiply" class="form-radio h-5 w-5">
+                        <span class="ml-1">Nhân</span>
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="operation" value="divide" class="form-radio h-5 w-5">
+                        <span class="ml-1">Chia</span>
+                    </label>
+                </div> 
+            </div>
+
+            <div class="mb-4 flex items-center justify-between">
+                <label class="flex-1">Kết quả</label>
+                <input type="text" class="result flex-2 border border-gray-300 rounded p-1 mx-2" readonly>
+                <button type="button" class="flex-1 bg-blue-600 text-white p-1">Tính</button>
+            </div>
+
+            <div class="mb-4 flex">
+                <p class="flex-1">Thông báo</p>
+                <p class="text-red-500 text-start flex-3 error-message"></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
